@@ -1,0 +1,184 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+*{
+	padding:0;
+	margin:0;
+	-moz-box-sizing: border-box;
+  	box-sizing: border-box;
+}	
+body{
+	font-size: 62.5%;	
+  /** you can set this as 100% if you want **/
+	background-color: #666;
+}
+h1, h2, h3{
+	font-weight: 700;	
+	padding: 10px 20px;
+	color: #000;
+}
+h1{
+	font-size: 3.6rem;	
+	font-family: 'Cedarville Cursive', cursive;
+}
+h2{
+	font-size: 3.0rem;	
+	font-family: 'Averia Serif Libre', serif;
+}
+h3{
+	font-size: 2.4rem;
+	font-family: 'Averia Serif Libre', serif;
+	color: #494949;	
+}
+p, li, a{
+	font-weight: 400;
+	font-family: 'Bubblegum Sans', sans-serif;
+	color: #555;		
+}
+p{
+	padding: 10px 20px;
+	font-size: 1.4rem;
+}
+li{
+	font-size: 1.4rem;
+}
+ol li{
+	padding: 6px 20px;
+	margin-left: 20px;
+	list-style-position:inside;
+}
+a{
+	font-size: 1.4rem;
+}	
+
+/***********************************
+					Layout
+***********************************/
+.wrapper{
+	background-color: #AFFAF9;	
+}
+.masthead{
+	background-color:#006160;
+}
+.nav{
+	
+}
+.navbar{
+	
+}
+.main{
+	background-color:#417E7F;
+}
+
+.two{
+	background-color:#00C6CC;
+}
+
+.three{
+	background-color:#4CFAFF;
+}
+.sidebar{
+	
+}
+
+.footer{
+		clear:both;
+}
+
+
+/***********************************
+					Masthead
+***********************************/
+.masthead h1{
+	padding: 30px 20px;
+}
+
+/***********************************
+					Navigation
+**********************************/
+
+.navbar li{
+	float:left;	
+	width: 100%;  /* 960/4 = 240  works if the layout is 960*/
+	list-style:none;
+}
+.navbar a{
+	display: block;	
+	padding: 8px 16px;
+	text-align: center;
+	text-decoration: none;
+	color: #333;
+	background-color: #00E1DD;
+}
+.navbar a:visited,
+.navbar a:hover,
+.navbar a:active,
+.navbar a:focus{
+	color: #fff;
+	background-color: #333;
+}
+
+.main h2{
+	clear:both;
+}
+
+@media all and (min-width: 1080px){
+	.nav, .main, .two, .three{
+    	float: left;
+    	width: 25%;
+  	}
+	.nav li{
+		width:100%;
+	}
+}
+
+@media all and (max-width: 1080px) and (min-width: 720px){
+	.nav li{
+		width:25%;
+	}
+	.main, .two, .three{
+    	float: left;
+    	width: 33.33%;
+  	}	
+}
+
+@media all and (max-width: 719px) and (min-width: 500px){
+	.navbar li{
+		float:left;	
+		width: 25%;  
+		list-style:none;
+	}
+	.nav, .main{
+    	clear:both;
+ 	 }
+	
+	.two, .three{
+    	float: left;
+    	width: 50%;
+  	}	
+}
+
+@media all and (max-width: 499px){
+	.nav li{
+		width:50%;
+	}
+}
+/***********************************
+					Content
+***********************************/
+.sidebar p{
+	font-size: 1.4rem;	
+}
+.instructions{
+	color: #C30;	
+}
+/***********************************
+					Footer
+***********************************/
+.footer p{
+	padding: 20px 20px;
+	font-size: 1.2rem;
+	color: #999;	
+	background-color: #006160;
+}
